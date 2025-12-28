@@ -1,0 +1,66 @@
+/* Task-specific styles */
+.task {
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+}
+
+.task h3 {
+    margin: 0;
+}
+
+.task p {
+    margin: 0.2rem 0;
+    color: #666;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.pending {
+    color: orange;
+}
+
+.in_progress {
+    color: blue;
+}
+
+.completed {
+    color: green;
+}
+
+.task-actions {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.edit-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn {
+    padding: 0.5rem 0.5rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}

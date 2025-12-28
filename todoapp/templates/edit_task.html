@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Edit Task{% endblock %}
+
+{% block content %}
+    <h1>Edit Task</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Update Task</button>
+    </form>
+
+    <div class="back-link">
+        <a href="{% url 'home' %}">Back to Home</a>
+    </div>
+{% endblock %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+{% endblock %}

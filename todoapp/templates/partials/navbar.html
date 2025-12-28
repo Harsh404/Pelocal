@@ -1,0 +1,14 @@
+<nav class="navbar">
+    <div class="navbar-brand">
+        <a href="{% url 'home' %}">Todo App</a>
+    </div>
+    <ul class="navbar-nav">
+        {% if user.is_authenticated %}
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'logout' %}">Logout ({{ user.username }})</a></li>
+        {% else %}
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'register' %}">Register</a></li>
+        {% endif %}
+    </ul>
+</nav>
