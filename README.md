@@ -195,7 +195,7 @@ Follow the setup instructions above for local development.
    sudo certbot --nginx -d your-domain.com
    ```
 
-### Environment Variables
+### Environment Variables For Production Setup and Deployment
 Create a `.env` file or set environment variables:
 ```
 SECRET_KEY=your-secret-key
