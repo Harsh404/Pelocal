@@ -218,5 +218,6 @@ DATABASE_URL=sqlite:///db.sqlite3  # Or PostgreSQL/MySQL for production
 
 - Uses raw SQL queries instead of Django ORM for task operations
 - Logging is configured to file for errors
+- Use Class-Based Views for a large production-based TODO App.
 - Exception handling is implemented in views
 - Templates are integrated with the API logic
